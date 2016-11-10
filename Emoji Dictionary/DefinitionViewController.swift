@@ -51,8 +51,41 @@ class DefinitionViewController: UIViewController {
         if emoji == "😡"{
             definitionLabel.text = "Angry face"
         }
+        if emoji == "😍"{
+            definitionLabel.text = "In love!"
+        }
+        if emoji == "🤔"{
+            definitionLabel.text = "Thinking face"
+        }
+        if emoji == "😈"{
+            definitionLabel.text = "Naughty devil"
+        }
+        if emoji == "😷"{
+            definitionLabel.text = "Nurse"
+        }
+        if emoji == "👻"{
+            definitionLabel.text = "Spooooky ghost"
+        }
+        if emoji == "🤖"{
+            definitionLabel.text = "A robot from the year 2050"
+        }
+        if emoji == "👮"{
+            definitionLabel.text = "A police officer"
+        }
+        if emoji == "💃"{
+            definitionLabel.text = "A dancer"
+        }
+        if emoji == "👑"{
+            definitionLabel.text = "A shiny crown"
+        }
+        if emoji == "🐸"{
+            definitionLabel.text = "A frog"
+        }
+        if emoji == "🐹"{
+            definitionLabel.text = "A cute hamster"
+        }
         
-        
+        //"👮","💃","👑","🐸","🐹"
         
         // Do any additional setup after loading the view.
     }
