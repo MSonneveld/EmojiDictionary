@@ -62,8 +62,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lovely" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xs-n0-WAH">
-                                <rect key="frame" x="158.5" y="403" width="58" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xs-n0-WAH">
+                                <rect key="frame" x="125" y="403" width="125" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlN-8j-aLe">
+                                <rect key="frame" x="114" y="447" width="147" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthyear: 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8M-qI-wBC">
+                                <rect key="frame" x="117" y="491" width="141" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,6 +83,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="g8M-qI-wBC" firstAttribute="top" secondItem="mlN-8j-aLe" secondAttribute="bottom" constant="20" id="Goi-Hp-BE4"/>
+                            <constraint firstItem="g8M-qI-wBC" firstAttribute="centerX" secondItem="MB9-8K-JCF" secondAttribute="centerX" id="IpU-cW-45m"/>
+                            <constraint firstItem="mlN-8j-aLe" firstAttribute="centerX" secondItem="MB9-8K-JCF" secondAttribute="centerX" id="M2e-uB-Gf4"/>
+                            <constraint firstItem="mlN-8j-aLe" firstAttribute="top" secondItem="2Xs-n0-WAH" secondAttribute="bottom" constant="20" id="aip-0v-wRr"/>
                             <constraint firstItem="teQ-OQ-LK4" firstAttribute="top" secondItem="BHo-ei-dCo" secondAttribute="bottom" constant="50" id="c0O-L8-pdP"/>
                             <constraint firstItem="2Xs-n0-WAH" firstAttribute="centerX" secondItem="MB9-8K-JCF" secondAttribute="centerX" id="eir-Gt-Rfv"/>
                             <constraint firstItem="teQ-OQ-LK4" firstAttribute="centerX" secondItem="MB9-8K-JCF" secondAttribute="centerX" id="hew-cs-vpf"/>
@@ -78,8 +94,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="mlN-8j-aLe" id="RSw-6k-TC8"/>
                         <outlet property="definitionLabel" destination="2Xs-n0-WAH" id="cAP-H3-iGO"/>
                         <outlet property="emojiLabel" destination="teQ-OQ-LK4" id="oxY-4w-3I0"/>
+                        <outlet property="yearLabel" destination="g8M-qI-wBC" id="ypb-2c-L8c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDP-KY-Z2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
